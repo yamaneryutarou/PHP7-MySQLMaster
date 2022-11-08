@@ -1,0 +1,20 @@
+3-1
+	substr関数を使って、「TEL:03-0000-0000（代表）」の電話番号部分だけを
+	切り取って変数$tel格納してください。
+
+	$number = "TEL:03-0000-0000（代表）";
+	$tel = substr($number, 4, 12);
+	print $tel;
+	
+3-2
+	array_pop関数を使って配列$dataの末尾に格納されたデータを変数$lastに格納してください。
+	$data = array("はちみつ","レモン","お茶");
+	$last = array_pop($data);
+	print $last;
+	
+3-3
+	time関数とdate関数を使って、現時点から24時間後の年月日時分秒を表示してください。
+	$timestamp = time() + ( 60 * 60 * 24 );
+	$tommorow = date('Y年m月d日 H時i分s秒', $timestamp );
+	print $tommorow;
+	
