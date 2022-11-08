@@ -1,0 +1,45 @@
+2-1
+	変数$telに文字列「03-0000-0000」を格納するコードを記述してください。
+	$tel = "03-0000-0000";
+
+2-2
+	<?php
+		$data = array(1,2,3,4,5,6,7,8,9,10); //1~10
+		for ($i = 0; $i <= count($data) - 1; $i++) //+1する
+	{
+ 		print $data[$i];
+		print "<br>";
+	}
+	?>
+
+2-3
+	$str = "登録"; //1~10
+  
+	if($str){
+    		print "登録しました。";
+	}
+	else{
+    		print "アクセス拒否";
+	}
+
+2-4
+	<?php
+	$member = array("name" => "〇田〇夫",
+             		"tel" => "03-0000-0000",
+             		"address" => "東京都千代田区");
+
+	foreach ($member as $key => $value)
+	{
+    		print($value);
+    		print "<br>";
+	}
+	?>
+
+2-5
+	<?php
+	function test($name){
+		$str = $name.'さん、こんにちは！';
+	        print $str;
+	}
+	test("AA");
+	?>
