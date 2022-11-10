@@ -1,0 +1,27 @@
+4-1
+	POSTメソッドで送信した以下のタグのデータを$_POSTを使って表示するコードを記述してください。
+	<input type="text" name="address">
+
+	print $_POST["address"]
+	
+	
+4-2
+	セッションを開始して、セッション変数の中からキーが[name]のデータを表示してください。
+	session_start();
+	print $_SESSION["count"]
+	
+4-3
+	このHTMLタグで送信したファイルの名前を表示してください。
+	<form name="form1" method="post" action="view.php"
+		enctype="multipart/form-data">
+		<input type="hidden" name="MAX_FILE_SIZE" value="100000">
+		画像:
+		<br>
+		<input type="file" name="upfile">
+		<br>
+	<input type="submit" value="ファイルアップロード">
+	</form>
+	
+	print $_FILES["upfile"]["name"];
+	
+	
