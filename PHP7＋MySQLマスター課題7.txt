@@ -1,0 +1,31 @@
+7-1
+	goodsテーブル作成
+	CREATE TABLE goods (
+	id INT UNSICNED NOT NULL AUTO_INCREMENT,
+	goods_name VARCHAR(100),
+	price INT(11),
+	PRIMARY KEY(id)
+	);
+	
+	
+7-2
+	goodsテーブルにデータ追加
+	INSERT INTO goods 
+	(
+	 goods_name,
+	 price
+	 )
+	 VALUES
+	 (
+	  '自動車',
+	  1000000,
+	 );
+	 
+	 
+7-3
+	データ検索
+	SELECT 
+		* 
+	FROM
+		goods
+
