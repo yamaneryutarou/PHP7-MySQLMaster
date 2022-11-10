@@ -1,0 +1,13 @@
+6-1
+	新規データベース作成
+	CREATE DATABASE memberdb
+	CHARACTER SET UTF8 COLLATE UTF8_GENERAL_CI;
+	;
+	
+	
+6-2
+	新規ユーザー登録
+	create user 'user01'@'localhost' identified by 'abcdefg';
+	
+	
+	
