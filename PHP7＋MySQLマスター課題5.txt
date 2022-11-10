@@ -1,0 +1,37 @@
+5-1
+class Board 
+{
+    public $subject  = "投稿";
+    public $name     = "山田";
+    public $contents = "こんにちは";
+
+
+public function dispArticle(){
+print "件名:".$this->subject."<br>";
+print "名前:".$this->name."<br>";
+print "内容:".$this->contents."<br>";
+
+}
+    
+}
+
+
+5-2
+	$board = newBoard;
+	$board->dispArticle();  
+
+
+5-3
+	class newBoard extends board{
+	public $subject  = "新しい掲示板です";
+	}
+	$board = new Board;
+	$board->dispArticle();
+
+
+5-4
+	class newBoard extends board{
+	public $subject  = "新しい掲示板です";
+	function stampArticle(){
+     }
+    }
