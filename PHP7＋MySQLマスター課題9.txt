@@ -1,0 +1,19 @@
+9-1
+	NewsModel
+	NewsInfo
+
+	NewsModel.php
+	NewsInfo.php
+
+9-2
+	$sql = "INSERT  INTO premember (username, password, last_name, first_name , last_kana_name , first_kana_namebirthday, ken, link_pass, reg_date)
+            VALUES ( :username, :password, :last_name, :first_name, :last_kana_name , :first_kana_name:birthday, :ken , :link_pass, now() )";
+            $stmh = $this->pdo->prepare($sql);
+            
+            
+9-3
+	requier_once("HTML/QuickForm2.php");
+	$from = new HTML_QuickForm2('Form');
+
+	$this->formaddElement('text','name',['size'] =>50,['label' => 'ƒRƒƒ“ƒg']);
+
