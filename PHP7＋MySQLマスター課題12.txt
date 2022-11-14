@@ -1,0 +1,21 @@
+12-1
+	タイトルで検索できるようにする。
+	$params = array(
+			"Service" => "AWSECommerceService",
+			"Operation" => "ItemSearch".
+			"AWSAccessKeyId" => "ACCESSKEY_ID",
+			"AssociateTag" => "ASSOCIATE_TAG",
+			"SearchIndex" => "Books",
+			"Title" => "PHP MYSQL"
+			"ResponseGroup" => "Images,ItemAttributes,Offers"
+			);
+
+
+12-2
+	方向のposition.coords.headingとスピードのposition.coords.speedという値が取得できた場合、alerrtで表示できるようにする。	var latitude = position.coords.latitude;
+	var longitude = position.coords.longitude;
+	var heading = position.coords.heading;
+	var speed = position.coords.speed;
+	var message = "緯度：" + latitude + "\n" + "軽度：" + longitude + "\n" + "方向：" + heading + "\n" + "スピード：" + speed; 
+	alert(message);
+	
