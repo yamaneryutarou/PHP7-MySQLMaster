@@ -1,0 +1,43 @@
+10-1
+	public function(){
+	`’†—ª`
+	switch($this->type){
+	`’†—ª`
+	
+	Case "delete";
+		$MemberController->screen_delete()
+		break;
+	Case "list";
+		$MemberController->screen_list()
+		break;
+	Case "regist";
+		$MemberController->screen_regist($this->auth)
+		break;
+	
+	//“š‚¦
+	Case "melmaga";
+		$MemberController->screen_melmaga($this->melmagalist)
+		break;
+	
+		
+	`’†—ª`
+	default:
+		$this->screen_top();
+		}
+	}
+	
+		
+10-2
+	{if ($db_data) }
+	<table>
+	<tbody>
+	<tr><th>”NŒ<tr><th>”„ã‚</tr></th>
+    {foreath item=item from =$db_data}
+    <tr>
+    <td>{$item.date|escape:"html"}</td>
+    <td>{$item.sell|escape:"html"}‰~</td>
+    </TR>
+    {/foreath}
+    </table>
+	</tbody>
+	{/if}
